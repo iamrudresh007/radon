@@ -6,9 +6,12 @@ const BookController= require("../controllers/bookController")
 const commonMW = require ("../middlewares/commonMiddlewares")
 
 router.get("/test-me", function (req, res) {
-    res.send("My first ever api!")
+    res.send("My second ever api!")
 })
 
+router.get("/test2", function (req, res) {
+    res.send("my second  api!")
+})
 
 
 
