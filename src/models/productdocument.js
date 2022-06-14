@@ -1,15 +1,11 @@
 const mongoose = require('mongoose');
 
-const bookSchema = new mongoose.Schema( {
-    bookName: String, 
-    authorName: String, 
-    tags: [String],
-    
-    isPublished: Boolean,
-    prices: {
-        indianPrice: String,
-        europePrice: String,
-    },
+const productSchema = new mongoose.Schema( {
+    authorName: String,
+    catagory:book,
+      prices: {
+        Price: String,
+            },
     sales: {type: Number, default: 10},
     
     // " best boook on earth"   [ "Nodejs in detail" , "mongodb in detail", "fronend in detail"] 
